@@ -1,5 +1,15 @@
+@import "./fonts/RobotoFlex/index.css";
+
 @import "tailwindcss";
 
 @theme {
   --spacing-container: 1200px;
+  --color-header: #12180b;
+  --font-robotoFlex: "Roboto Flex";
+}
+
+@layer base {
+  * {
+    @apply font-robotoFlex;
+  }
 }

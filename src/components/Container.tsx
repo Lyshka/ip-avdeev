@@ -1,10 +1,14 @@
-import { IChildren } from "../Interfaces/IChildren"
+import React from "react";
+import { cn } from "../lib/utils";
 
-const Container: React.FC<IChildren> = ({ children }) => {
+interface IContainerProps extends React.HTMLProps<HTMLDivElement> { }
+
+const Container: React.FC<React.PropsWithChildren<IContainerProps>> = ({ children, ...rest }) => {
     return (
-        <div className="max-w-container w-full mx-auto">
+        <div {...rest} className={cn("max-w-container w-full mx-auto", rest.className)}>
             {children}
         </div>
-    )
+    );
 }
-export default Container
+
+export default Container;
