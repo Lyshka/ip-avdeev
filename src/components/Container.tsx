@@ -2,7 +2,7 @@ import { IChildren } from "../Interfaces/IChildren"
 
 const Container: React.FC<IChildren> = ({ children }) => {
     return (
-        <div className="max-w-spacing">
+        <div className="max-w-container w-full mx-auto">
             {children}
         </div>
     )
