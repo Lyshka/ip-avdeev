@@ -1,22 +1,27 @@
-@import "./fonts/";
+@import "./fonts";
 
 @import "tailwindcss";
 
 @theme {
   --color-header: #12180b;
   --color-gray-31: #313131;
+  --color-gray-f8: #f8f4f2;
+  --color-gray-ae: #aeacab;
 
   --spacing-container: 1200px;
 
   --font-robotoFlex: "Roboto Flex";
+  --font-notoSerif: "NotoSerif";
 }
 
 @layer base {
-  * {
-    @apply font-robotoFlex;
+  body {
+    @apply font-notoSerif;
   }
 
-  a {
+  a,
+  button,
+  path {
     @apply transition-all duration-300;
   }
 

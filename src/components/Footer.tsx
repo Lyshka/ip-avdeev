@@ -6,7 +6,7 @@ export const Footer = () => {
 
   return (
     <>
-      <footer className="bg-gray-31 py-14">
+      <footer className="bg-gray-31 py-14 font-robotoFlex">
         <Container className="flex items-center justify-between text-sm text-white">
           <p>
             ©{new Date().getFullYear()} ИП Авдеев А.В., УНП 391067914 от 29 Марта 2019 г.
