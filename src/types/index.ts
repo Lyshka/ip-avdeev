@@ -1,3 +1,3 @@
 import { policyStoreType } from "types/policyStoreType";
 
-export { policyStoreType };
+export type { policyStoreType };
