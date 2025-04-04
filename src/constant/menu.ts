@@ -1,29 +1,29 @@
-import { IMenu, IMenuSmall } from "../Interfaces/IMenu";
+import { IMenu } from "../Interfaces/IMenu";
 
-const menuSmall: IMenuSmall[] = [
+const menuSmall: Omit<IMenu, "id">[] = [
   {
     name: "Продукция",
-    link: "#",
+    link: "#products",
   },
   {
     name: "Доставка",
-    link: "#",
+    link: "#delivery",
   },
   {
     name: "Отзывы",
-    link: "#",
+    link: "#reviews",
   },
   {
     name: "Фотогалерея",
-    link: "#",
+    link: "#gallery",
   },
   {
     name: "Вопрос-ответ",
-    link: "#",
+    link: "#quests",
   },
   {
     name: "Контакты",
-    link: "#",
+    link: "#contact",
   },
 ];
 

@@ -3,8 +3,3 @@ export interface IMenu {
   name: string;
   link: string;
 }
-
-export interface IMenuSmall {
-  name: string;
-  link: string;
-}

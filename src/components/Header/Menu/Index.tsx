@@ -6,7 +6,7 @@ const Menu = () => {
         <nav>
             <ul className="flex items-center gap-16">
                 {menu.map((item) => (
-                    <Item item={item} />
+                    <Item key={item.id} item={item} />
                 ))}
             </ul>
         </nav>

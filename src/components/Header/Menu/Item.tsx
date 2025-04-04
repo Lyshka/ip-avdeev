@@ -6,8 +6,8 @@ interface IItemProps {
 
 const Item: React.FC<IItemProps> = ({ item: { id, link, name } }) => {
     return (
-        <li key={id}>
-            <a href={link} className="text-lg text-white font-bold">
+        <li>
+            <a href={link} className="text-lg text-white font-bold hover:opacity-80">
                 {name}
             </a>
         </li>

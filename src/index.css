@@ -12,4 +12,14 @@
   * {
     @apply font-robotoFlex;
   }
+
+  a {
+    @apply transition-all duration-300;
+  }
+}
+
+@layer components {
+  .itemLinkSocial:hover {
+    @apply opacity-80;
+  }
 }

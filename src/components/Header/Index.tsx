@@ -1,5 +1,5 @@
 import Container from "../Container"
-import Contact from "./Contact"
+import Contact from "./Contact/Index"
 import Menu from "./Menu/Index"
 
 const Header = () => {
