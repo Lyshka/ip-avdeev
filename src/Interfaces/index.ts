@@ -3,4 +3,4 @@ import { IIcon } from "interfaces/IIcon";
 import { IMenu } from "interfaces/IMenu";
 import { IModal } from "interfaces/IModal";
 
-export type { IContact, IIcon, IMenu, IModal };
+export { IContact, IIcon, IMenu, IModal };
