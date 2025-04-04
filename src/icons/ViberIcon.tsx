@@ -1,6 +1,6 @@
-import { IIcon } from "../Interfaces/IIcon"
+import { IIcon } from "interfaces"
 
-const ViberIcon: React.FC<IIcon> = ({ height = 20, width = 20 }) => {
+export const ViberIcon: React.FC<IIcon> = ({ height = 20, width = 20 }) => {
     return (
         <svg width={width} height={height} viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect y="0.5" width="20" height="20" fill="#605EB3" />
@@ -9,4 +9,3 @@ const ViberIcon: React.FC<IIcon> = ({ height = 20, width = 20 }) => {
         </svg>
     )
 }
-export default ViberIcon

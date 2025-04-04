@@ -1,10 +1,10 @@
-import { IMenu } from "../../../Interfaces/IMenu"
+import { IMenu } from "interfaces"
 
 interface IItemProps {
     item: IMenu
 }
 
-const Item: React.FC<IItemProps> = ({ item: { id, link, name } }) => {
+export const MenuItem: React.FC<IItemProps> = ({ item: { id, link, name } }) => {
     return (
         <li>
             <a href={link} className="text-lg text-white font-bold hover:opacity-80">
@@ -13,4 +13,3 @@ const Item: React.FC<IItemProps> = ({ item: { id, link, name } }) => {
         </li>
     )
 }
-export default Item

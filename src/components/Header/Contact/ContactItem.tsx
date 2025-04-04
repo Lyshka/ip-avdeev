@@ -1,14 +1,11 @@
-import { IContact } from "../../../Interfaces/IContact";
-import TelIcon from "../../../icons/TelIcon";
-import TelegramIcon from "../../../icons/TelegramIcon";
-import ViberIcon from "../../../icons/ViberIcon";
-import WhatsupIcon from "../../../icons/WhatsupIcon";
+import { IContact } from "interfaces";
+import { TelIcon, TelegramIcon, ViberIcon, WhatsupIcon } from "icons";
 
 interface IItemProps {
     item: IContact;
 }
 
-const Item: React.FC<IItemProps> = ({ item: { link, social, tel } }) => {
+export const ContactItem: React.FC<IItemProps> = ({ item: { link, social, tel } }) => {
     return (
         <li className="flex items-center gap-2">
             <a href={link} className="flex items-center gap-2 font-semibold text-xl text-white hover:opacity-80">
@@ -39,4 +36,3 @@ const Item: React.FC<IItemProps> = ({ item: { link, social, tel } }) => {
         </li>
     )
 }
-export default Item

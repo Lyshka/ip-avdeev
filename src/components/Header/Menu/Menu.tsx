@@ -1,15 +1,14 @@
-import { menu } from "../../../constant/menu"
-import Item from "./Item"
+import { menu } from "constants"
+import { MenuItem } from "components/Header"
 
-const Menu = () => {
+export const Menu = () => {
     return (
         <nav>
             <ul className="flex items-center gap-16">
                 {menu.map((item) => (
-                    <Item key={item.id} item={item} />
+                    <MenuItem key={item.id} item={item} />
                 ))}
             </ul>
         </nav>
     )
 }
-export default Menu

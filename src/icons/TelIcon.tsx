@@ -1,6 +1,6 @@
-import { IIcon } from "../Interfaces/IIcon"
+import { IIcon } from "interfaces"
 
-const TelIcon: React.FC<IIcon> = ({ height = 20, width = 20 }) => {
+export const TelIcon: React.FC<IIcon> = ({ height = 20, width = 20 }) => {
     return (
         <svg width={width} height={height} viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_32_909)">
@@ -14,4 +14,3 @@ const TelIcon: React.FC<IIcon> = ({ height = 20, width = 20 }) => {
         </svg>
     )
 }
-export default TelIcon

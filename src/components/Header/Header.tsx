@@ -1,8 +1,7 @@
-import Container from "../Container"
-import Contact from "./Contact/Index"
-import Menu from "./Menu/Index"
+import { Container } from "components"
+import { Contact, Menu } from "components/Header"
 
-const Header = () => {
+export const Header = () => {
   return (
     <header className="py-5 bg-header">
       <Container className="flex justify-between items-center">
@@ -13,4 +12,3 @@ const Header = () => {
     </header>
   )
 }
-export default Header

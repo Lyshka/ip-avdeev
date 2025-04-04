@@ -1,7 +1,6 @@
-import React from "react"
-import { IIcon } from "../Interfaces/IIcon"
+import { IIcon } from "interfaces"
 
-const TelegramIcon: React.FC<IIcon> = ({ height, width = 20 }) => {
+export const TelegramIcon: React.FC<IIcon> = ({ height, width = 20 }) => {
     return (
         <svg width={width} height={height} viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect y="0.5" width="20" height="20" fill="#27A6E5" />
@@ -9,4 +8,3 @@ const TelegramIcon: React.FC<IIcon> = ({ height, width = 20 }) => {
         </svg>
     )
 }
-export default TelegramIcon
