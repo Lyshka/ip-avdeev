@@ -1,4 +1,4 @@
-import { IMenu } from "interfaces";
+import { IMenu } from "interfaces/index";
 
 const menuSmall: Omit<IMenu, "id">[] = [
   {

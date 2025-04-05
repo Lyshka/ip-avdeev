@@ -1,4 +1,4 @@
-import { IContact } from "interfaces";
+import { IContact } from "interfaces/index";
 import { TelIcon, TelegramIcon, ViberIcon, WhatsupIcon } from "icons";
 
 interface IItemProps {

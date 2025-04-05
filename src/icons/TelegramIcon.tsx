@@ -1,4 +1,4 @@
-import { IIcon } from "interfaces"
+import { IIcon } from "interfaces/index"
 
 export const TelegramIcon: React.FC<IIcon> = ({ height, width = 20 }) => {
     return (

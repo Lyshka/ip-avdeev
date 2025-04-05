@@ -1,4 +1,4 @@
-import { IIcon } from "interfaces"
+import { IIcon } from "interfaces/index"
 
 export const ViberIcon: React.FC<IIcon> = ({ height = 20, width = 20 }) => {
     return (

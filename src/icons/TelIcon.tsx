@@ -1,4 +1,4 @@
-import { IIcon } from "interfaces"
+import { IIcon } from "interfaces/index"
 
 export const TelIcon: React.FC<IIcon> = ({ height = 20, width = 20 }) => {
     return (

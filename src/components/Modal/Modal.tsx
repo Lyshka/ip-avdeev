@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { IModal } from "interfaces"
+import { IModal } from "interfaces/index"
 import { cn } from "libs"
 import { CloseIcon } from "icons/CloseIcon"
 
