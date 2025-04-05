@@ -1,6 +1,5 @@
-import { Container } from "components/Container";
 import { Footer } from "components/Footer";
 import { Header } from "components/Header/Header";
-import { PolicyModal } from "components/Modal";
+import { PolicyModal, Modal } from "components/Modal";
 
-export { Container, Footer, Header, PolicyModal };
+export { Footer, Header, PolicyModal, Modal };

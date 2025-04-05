@@ -15,6 +15,7 @@ export default defineConfig({
       libs: "/src/libs",
       stores: "/src/stores",
       types: "/src/types",
+      ui: "/src/ui",
     },
   },
 });

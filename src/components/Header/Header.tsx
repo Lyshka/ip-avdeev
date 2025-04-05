@@ -1,4 +1,4 @@
-import { Container } from "components"
+import { Container } from "ui"
 import { Contact, Menu } from "components/Header"
 
 export const Header = () => {

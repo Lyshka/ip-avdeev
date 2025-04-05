@@ -18,7 +18,7 @@ export const Modal: React.FC<React.PropsWithChildren<IModal>> = ({ children, isO
 
   return (
     <div onClick={handleClose} className={cn("fixed inset-0 bg-black/50 backdrop-blur hidden justify-center items-center",
-      isOpen && "flex")}>
+      true && "flex")}>
       <div className="bg-gray-f8 relative border border-gray-ae rounded-md py-14 px-20">
         <button onClick={toggle} className="absolute top-2.5 right-2.5 group p-2.5 -m-2.5 z-10">
           <CloseIcon />

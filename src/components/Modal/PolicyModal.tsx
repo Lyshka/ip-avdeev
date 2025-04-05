@@ -1,5 +1,6 @@
 import { usePolicyStore } from "stores"
-import { Modal } from "components/Modal"
+import { Modal } from "components";
+import { Button, Input } from "ui"
 
 export const PolicyModal = () => {
     const policyStore = usePolicyStore();
@@ -16,7 +17,15 @@ export const PolicyModal = () => {
                     </p>
                 </div>
 
-                <div></div>
+                <div className="space-y-6">
+                    <Input placeholder="Ваше имя" />
+
+                    <Input placeholder="+ 375 __ _______" />
+
+                    <Button className="w-fit mx-auto block">
+                        Заказать звонок
+                    </Button>
+                </div>
             </div>
         </Modal>
     )

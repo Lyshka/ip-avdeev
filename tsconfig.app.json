@@ -29,7 +29,8 @@
       "interfaces/*": ["interfaces/*"],
       "libs/*": ["libs/*"],
       "stores/*": ["stores/*"],
-      "types/*": ["types/*"]
+      "types/*": ["types/*"],
+      "ui/*": ["ui/*"]
     },
   },
   "include": ["src"],

@@ -1,5 +1,5 @@
 /* @import "./fonts"; */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
 
 @import "tailwindcss";
 
@@ -8,6 +8,8 @@
   --color-gray-31: #313131;
   --color-gray-f8: #f8f4f2;
   --color-gray-ae: #aeacab;
+  --color-gray-69: #696969;
+  --color-green: #0fc042;
 
   --spacing-container: 1200px;
 
@@ -20,6 +22,11 @@
     @apply font-notoSerif;
   }
 
+  a:hover,
+  button:hover {
+    @apply opacity-80 cursor-pointer;
+  }
+
   a,
   button,
   path {
@@ -27,12 +34,6 @@
   }
 
   body.noScroll {
-    overflow: hidden;
-  }
-}
-
-@layer components {
-  .itemLinkSocial:hover {
-    @apply opacity-80;
+    @apply overflow-hidden;
   }
 }
