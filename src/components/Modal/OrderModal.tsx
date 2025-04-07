@@ -1,3 +1,5 @@
+import { IMaskInput } from "react-imask"
+
 import { useModalStore } from "stores"
 import { Modal } from "components";
 import { Button, Input, Conf } from "ui"
@@ -18,6 +20,14 @@ export const OrderModal = () => {
                 </div>
 
                 <div className="space-y-6">
+                    <IMaskInput
+                        className="inputForm"
+                        mask="+375 00 000000"
+                        definitions={{
+                            '0': /[0-9]/
+                        }}
+                    />
+
                     <Input placeholder="Ваше имя" />
 
                     <Input placeholder="+ 375 __ _______" />

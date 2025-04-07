@@ -11,10 +11,22 @@
   --color-gray-69: #696969;
   --color-green: #0fc042;
 
+  --animate-fadeIn: fadeIn 0.5s ease-out;
+
   --spacing-container: 1200px;
 
   --font-robotoFlex: "Roboto Flex";
   --font-notoSerif: "NotoSerif";
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 100;
+    }
+  }
 }
 
 @layer base {
@@ -29,11 +41,18 @@
 
   a,
   button,
-  path {
+  path,
+  svg {
     @apply transition-all duration-300;
   }
 
   body.noScroll {
     @apply overflow-hidden;
+  }
+}
+
+@layer components {
+  .inputForm {
+    @apply w-full bg-white focus-within:border-gray-31 border border-transparent rounded-md placeholder:text-gray-69 p-3.5 font-robotoFlex;
   }
 }
