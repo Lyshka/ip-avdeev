@@ -16,6 +16,7 @@ export default defineConfig({
       stores: "/src/stores",
       types: "/src/types",
       ui: "/src/ui",
+      enums: "/src/enums",
     },
   },
 });

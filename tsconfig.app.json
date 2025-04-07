@@ -30,8 +30,9 @@
       "libs/*": ["libs/*"],
       "stores/*": ["stores/*"],
       "types/*": ["types/*"],
-      "ui/*": ["ui/*"]
-    },
+      "ui/*": ["ui/*"],
+      "enums/*": ["enums/*"]
+    }
   },
-  "include": ["src"],
+  "include": ["src"]
 }

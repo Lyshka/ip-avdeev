@@ -1,8 +1,13 @@
-import { usePolicyStore } from "stores"
+import { modalEnum } from "enums/modalEnum";
+import { useModalStore } from "stores"
 import { Container } from "ui"
 
 export const Footer = () => {
-  const { toggle } = usePolicyStore();
+  const { toggle } = useModalStore();
+
+  const handleToggle = () => {
+    toggle(modalEnum.CONF, true);
+  }
 
   return (
     <>
@@ -12,7 +17,7 @@ export const Footer = () => {
             ©{new Date().getFullYear()} ИП Авдеев А.В., УНП 391067914 от 29 Марта 2019 г.
           </p>
 
-          <button onClick={toggle}>Политика обработки персональных данных</button>
+          <button onClick={handleToggle}>Политика обработки персональных данных</button>
 
           <a href="https://lyshka.by">
             Создание сайта: Lyshka.by

@@ -1,12 +1,12 @@
-import { usePolicyStore } from "stores"
+import { useModalStore } from "stores"
 import { Modal } from "components";
-import { Button, Input } from "ui"
+import { Button, Input, Conf } from "ui"
 
-export const PolicyModal = () => {
-    const policyStore = usePolicyStore();
+export const OrderModal = () => {
+    const { isOrderOpen } = useModalStore();
 
     return (
-        <Modal {...policyStore}>
+        <Modal isOpen={true}>
             <div className="space-y-10">
                 <div className="text-center space-y-5 text-gray-31 font-bold uppercase">
                     <h6 className="text-4xl">Обсудить поставку</h6>
@@ -21,6 +21,8 @@ export const PolicyModal = () => {
                     <Input placeholder="Ваше имя" />
 
                     <Input placeholder="+ 375 __ _______" />
+
+                    <Conf />
 
                     <Button className="w-fit mx-auto block">
                         Заказать звонок

@@ -1,3 +1,3 @@
-import { policyStoreType } from "types/policyStoreType";
+import { modalStoreType } from "types/modalStoreType";
 
-export type { policyStoreType };
+export type { modalStoreType };

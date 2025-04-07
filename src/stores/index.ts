@@ -1,3 +1,3 @@
-import { usePolicyStore } from "stores/policyStore";
+import { useModalStore } from "stores/modalStore";
 
-export { usePolicyStore };
+export { useModalStore };
