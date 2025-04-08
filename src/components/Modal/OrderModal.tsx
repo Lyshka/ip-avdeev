@@ -3,8 +3,10 @@ import { IMaskInput } from "react-imask"
 import { useModalStore } from "stores"
 import { Modal } from "components";
 import { Button, Input, Conf } from "ui"
+import { useForm } from "react-hook-form";
 
 export const OrderModal = () => {
+    const { register } = useForm();
     const { isOrderOpen } = useModalStore();
 
     return (
@@ -22,15 +24,15 @@ export const OrderModal = () => {
                 <div className="space-y-6">
                     <IMaskInput
                         className="inputForm"
-                        mask="+375 00 000000"
+                        mask="+375 00 0000000"
+                        lazy={false}
                         definitions={{
                             '0': /[0-9]/
                         }}
+                        {...register("tel")}
                     />
 
                     <Input placeholder="Ваше имя" />
-
-                    <Input placeholder="+ 375 __ _______" />
 
                     <Conf />
 
