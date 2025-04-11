@@ -1,5 +1,6 @@
-import { Footer, Header } from "components"
-import { Modals } from "components"
+import { ToastContainer } from "react-toastify"
+
+import { Footer, Header, Modals } from "components"
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       </div>
 
       <Modals />
+      <ToastContainer />
     </>
   )
 }

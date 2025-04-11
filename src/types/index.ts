@@ -1,3 +1,4 @@
 import { modalStoreType } from "types/modalStoreType";
+import { orderFieldType } from "types/orderFieldType";
 
-export type { modalStoreType };
+export type { modalStoreType, orderFieldType };

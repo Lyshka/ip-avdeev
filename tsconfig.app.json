@@ -31,7 +31,9 @@
       "stores/*": ["stores/*"],
       "types/*": ["types/*"],
       "ui/*": ["ui/*"],
-      "enums/*": ["enums/*"]
+      "enums/*": ["enums/*"],
+      "schemes/*": ["schemes/*"],
+      "hooks/*": ["hooks/*"]
     }
   },
   "include": ["src"]
