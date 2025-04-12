@@ -1,6 +1,7 @@
 import { ToastContainer } from "react-toastify"
 
-import { Footer, Header, Modals } from "components"
+import { Contact, Delivery, Edge, Footer, FormBlock, Gallery, Header, Modals, Product, Quest, Review, UpBlock } from "components"
+import { Container } from "ui"
 
 const App = () => {
   return (
@@ -9,6 +10,18 @@ const App = () => {
         <Header />
 
         <div className="flex-1">
+          <UpBlock />
+
+          <Container className="space-y-28 py-28">
+            <Edge />
+            <Product />
+            <Delivery />
+            <Review />
+            <Gallery />
+            <Quest />
+            <FormBlock />
+            <Contact />
+          </Container>
         </div>
 
         <Footer />
