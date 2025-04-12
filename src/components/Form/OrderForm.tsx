@@ -12,7 +12,7 @@ import { modalEnum } from "enums";
 
 export const OrderForm = () => {
     const { toggle } = useModalStore()
-    const { register, handleSubmit, setValue, reset, formState: { errors, isValid, isSubmitSuccessful } } = useForm<orderFieldType>({
+    const { register, handleSubmit, setValue, reset, control, formState: { errors, isValid, isSubmitSuccessful } } = useForm<orderFieldType>({
         resolver: zodResolver(orderScheme),
         defaultValues: {
             tel: "",
@@ -45,7 +45,7 @@ export const OrderForm = () => {
 
             <Input placeholder="Ваше имя" {...register("name")} />
 
-            <Conf {...register("conf")} />
+            <Conf control={control}/>
 
             <Button type="submit" className="w-fit mx-auto block">
                 Заказать звонок

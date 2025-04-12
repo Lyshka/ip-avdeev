@@ -6,7 +6,7 @@ export const Footer = () => {
   const { toggle } = useModalStore();
 
   const handleToggle = () => {
-    toggle(modalEnum.ORDER, true);
+    toggle(modalEnum.CONF, true);
   }
 
   return (
