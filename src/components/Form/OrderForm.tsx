@@ -6,10 +6,9 @@ import { toast } from "react-toastify";
 import { Button, Input, Conf } from "ui"
 import { orderFieldType } from "types";
 import { orderScheme } from "schemes";
-import { useToastErrors } from "hooks";
+import { useFormReset, useToastErrors } from "hooks";
 import { useModalStore } from "stores";
 import { modalEnum } from "enums";
-import { useEffect } from "react";
 
 export const OrderForm = () => {
     const { toggle } = useModalStore()
@@ -23,17 +22,12 @@ export const OrderForm = () => {
     });
 
     useToastErrors<orderFieldType>(errors, isValid);
+    useFormReset<orderFieldType>(isSubmitSuccessful, reset);
 
     const onSubmit: SubmitHandler<orderFieldType> = () => {
         toast.success("Ваши данные уже отправлены менеджеру");
         toggle(modalEnum.ORDER, false);
     }
-
-    useEffect(() => {
-        if (isSubmitSuccessful) {
-            reset();
-        }
-    }, [isSubmitSuccessful])
 
     return (
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
@@ -53,7 +47,7 @@ export const OrderForm = () => {
 
             <Conf {...register("conf")} />
 
-            <Button className="w-fit mx-auto block">
+            <Button type="submit" className="w-fit mx-auto block">
                 Заказать звонок
             </Button>
         </form>

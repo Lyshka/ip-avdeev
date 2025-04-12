@@ -10,7 +10,9 @@ export const Conf: React.FC<React.HTMLProps<HTMLInputElement>> = ({ ...props }) 
 
     const { toggle } = useModalStore();
 
-    const handleToggle = () => {
+    const handleToggle = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+        event.stopPropagation();
+
         toggle(modalEnum.CONF, true)
     }
 
@@ -28,7 +30,7 @@ export const Conf: React.FC<React.HTMLProps<HTMLInputElement>> = ({ ...props }) 
 
             <p>
                 Соглашаюсь с{" "}
-                <button className="underline" onClick={handleToggle}>
+                <button type="button" className="underline" onClick={handleToggle}>
                     Политикой обработки персональных данных
                 </button>
             </p>

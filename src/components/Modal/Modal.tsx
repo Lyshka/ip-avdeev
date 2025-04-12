@@ -2,10 +2,9 @@ import { useEffect } from "react"
 import { IModal } from "interfaces/index"
 import { cn } from "libs"
 import { CloseIcon } from "icons/CloseIcon"
-import { modalEnum } from "enums/modalEnum"
 import { useModalStore } from "stores/modalStore"
 
-export const Modal: React.FC<React.PropsWithChildren<IModal>> = ({ children, isOpen }) => {
+export const Modal: React.FC<React.PropsWithChildren<IModal>> = ({ children, isOpen, modalName }) => {
   const { toggle } = useModalStore();
 
   useEffect(() => {
@@ -15,9 +14,7 @@ export const Modal: React.FC<React.PropsWithChildren<IModal>> = ({ children, isO
   }, [isOpen])
 
   const handleToggle = () => {
-    Object.entries(modalEnum).map(([_, modalName]) => {
-      toggle(modalName, false);
-    })
+    toggle(modalName, false);
   }
 
   const handleClose = (event: React.MouseEvent<HTMLDivElement>) => {
