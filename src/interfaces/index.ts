@@ -4,5 +4,6 @@ import { IMenu } from "interfaces/IMenu";
 import { IModal } from "interfaces/IModal";
 import { IConf } from "interfaces/IConf";
 import { IUpblock } from "interfaces/IUpBlock";
+import { IEdge } from "interfaces/IEdge";
 
-export type { IContact, IIcon, IMenu, IModal, IConf, IUpblock };
+export type { IContact, IIcon, IMenu, IModal, IConf, IUpblock, IEdge };
