@@ -1,5 +1,9 @@
+import { Title } from "ui"
+
 export const Review = () => {
   return (
-    <div>Review</div>
+    <section>
+      <Title title="Отзывы наших клиентов" />
+    </section>
   )
 }

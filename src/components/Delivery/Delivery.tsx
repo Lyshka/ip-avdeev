@@ -1,5 +1,9 @@
+import { Title } from "ui"
+
 export const Delivery = () => {
   return (
-    <div>Delivery</div>
+    <section>
+      <Title title="Доставка собственным автомобилем" />
+    </section>
   )
 }

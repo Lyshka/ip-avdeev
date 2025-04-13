@@ -5,5 +5,19 @@ import { IModal } from "interfaces/IModal";
 import { IConf } from "interfaces/IConf";
 import { IUpblock } from "interfaces/IUpBlock";
 import { IEdge } from "interfaces/IEdge";
+import { ITitle } from "interfaces/ITitle";
+import { IContainer } from "interfaces/IContainer";
+import { IProduct } from "interfaces/IProduct";
 
-export type { IContact, IIcon, IMenu, IModal, IConf, IUpblock, IEdge };
+export type {
+  IContact,
+  IIcon,
+  IMenu,
+  IModal,
+  IConf,
+  IUpblock,
+  IEdge,
+  ITitle,
+  IContainer,
+  IProduct,
+};

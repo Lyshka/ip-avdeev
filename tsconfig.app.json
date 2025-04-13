@@ -33,7 +33,8 @@
       "ui/*": ["ui/*"],
       "enums/*": ["enums/*"],
       "schemes/*": ["schemes/*"],
-      "hooks/*": ["hooks/*"]
+      "hooks/*": ["hooks/*"],
+      "imgs/*": ["imgs/*"]
     }
   },
   "include": ["src"]

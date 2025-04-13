@@ -1,5 +1,9 @@
+import { Title } from "ui"
+
 export const Gallery = () => {
   return (
-    <div>Gallery</div>
+    <section>
+          <Title title="Фотогалерея" />
+    </section>
   )
 }

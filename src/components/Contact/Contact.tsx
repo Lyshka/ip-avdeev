@@ -1,5 +1,9 @@
+import { Title } from "ui"
+
 export const Contact = () => {
   return (
-    <div>Contact</div>
+   <section>
+      <Title title="Контакты" />
+   </section>
   )
 }

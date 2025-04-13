@@ -19,6 +19,7 @@ export default defineConfig({
       enums: "/src/enums",
       schemes: "/src/schemes",
       hooks: "/src/hooks",
+      imgs: "/src/imgs"
     },
   },
 });

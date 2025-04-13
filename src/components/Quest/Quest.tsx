@@ -1,5 +1,9 @@
+import { Title } from "ui"
+
 export const Quest = () => {
   return (
-    <div>Quest</div>
+    <section>
+      <Title title="Вопрос-Ответ" />
+    </section>
   )
 }
