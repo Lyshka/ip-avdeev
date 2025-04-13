@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { modalEnum } from "enums/modalEnum";
+import { modalEnum } from "enums";
 import { modalStoreType } from "types";
 
 export const useModalStore = create<modalStoreType>()((set) => ({

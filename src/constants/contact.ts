@@ -1,4 +1,4 @@
-import { IContact } from "interfaces/index";
+import { IContact } from "interfaces";
 import { TelLinkFormmater } from "libs";
 
 const contactSmall: Omit<IContact, "id" | "social" | "link">[] = [

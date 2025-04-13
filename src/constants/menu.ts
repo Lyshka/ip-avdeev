@@ -1,4 +1,5 @@
-import { IMenu } from "interfaces/index";
+import { IMenu } from "interfaces";
+import { generateIdFromObject } from "libs";
 
 const menuSmall: Omit<IMenu, "id">[] = [
   {
@@ -27,7 +28,4 @@ const menuSmall: Omit<IMenu, "id">[] = [
   },
 ];
 
-export const menu: IMenu[] = menuSmall.map((item, idx) => ({
-  id: idx + 1,
-  ...item,
-}));
+export const menu = generateIdFromObject(menuSmall);

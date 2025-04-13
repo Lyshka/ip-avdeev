@@ -1,4 +1,4 @@
 import { TelLinkFormmater } from "libs/TelLinkFormatter";
-import { cn } from "libs/utils";
+import { cn, generateIdFromObject } from "libs/utils";
 
-export { cn, TelLinkFormmater };
+export { cn, TelLinkFormmater, generateIdFromObject };

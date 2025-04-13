@@ -1,4 +1,4 @@
-import { modalEnum } from "enums/modalEnum";
+import { modalEnum } from "enums";
 import { useModalStore } from "stores"
 import { Container } from "ui"
 

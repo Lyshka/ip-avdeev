@@ -1,4 +1,4 @@
-import { cn } from "libs/utils"
+import { cn } from "libs"
 
 export const Button: React.FC<React.ComponentProps<'button'>> = ({ children, type = "button", ...props }) => {
     return (

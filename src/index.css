@@ -31,7 +31,7 @@
 
 @layer base {
   body {
-    @apply font-notoSerif;
+    @apply font-notoSerif text-gray-31;
   }
 
   a:hover,

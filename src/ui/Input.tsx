@@ -1,4 +1,4 @@
-import { cn } from "libs/utils"
+import { cn } from "libs"
 import React from "react"
 
 export const Input = React.forwardRef<HTMLInputElement, React.HTMLProps<HTMLInputElement>>(

@@ -1,4 +1,4 @@
-import { IIcon } from "interfaces/IIcon"
+import { IIcon } from "interfaces"
 
 export const CloseIcon: React.FC<IIcon> = ({ height = 20, width = 20 }) => {
     return (
