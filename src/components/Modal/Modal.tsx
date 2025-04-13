@@ -7,12 +7,17 @@ import { useModalStore } from "stores"
 import { Container } from "ui"
 
 export const Modal: React.FC<React.PropsWithChildren<IModal>> = ({ children, isOpen, modalName }) => {
-  const { toggle } = useModalStore();
+  const { toggle, isConfOpen, isOrderOpen } = useModalStore();
 
   useEffect(() => {
     const body = document.querySelector('body');
 
-    body?.classList.toggle('noScroll');
+    if (isConfOpen || isOrderOpen) {
+      body?.classList.add('noScroll');
+    } else {
+      body?.classList.remove('noScroll');
+    }
+
   }, [isOpen])
 
   const handleToggle = () => {
