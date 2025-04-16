@@ -3,7 +3,7 @@ import { IIcon } from "interfaces"
 export const EdgeIcon4: React.FC<IIcon> = ({ height = 64, width = 64 }) => {
     return (
         <svg width={width} height={height} viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_32_869)">
+            <g clipPath="url(#clip0_32_869)">
                 <mask id="mask0_32_869" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
                     <path d="M62.9998 63V1.00019H1V63H62.9998Z" fill="white" stroke="white" strokeWidth="2" />
                 </mask>

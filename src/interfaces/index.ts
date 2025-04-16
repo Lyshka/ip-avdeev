@@ -9,6 +9,7 @@ import { ITitle } from "interfaces/ITitle";
 import { IContainer } from "interfaces/IContainer";
 import { IProduct } from "interfaces/IProduct";
 import { IDelivery } from "interfaces/IDelivery";
+import { IReview } from "interfaces/IReview";
 
 export type {
   IContact,
@@ -21,5 +22,6 @@ export type {
   ITitle,
   IContainer,
   IProduct,
-  IDelivery
+  IDelivery,
+  IReview,
 };

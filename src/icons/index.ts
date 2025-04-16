@@ -6,6 +6,8 @@ import { WhatsupIcon } from "icons/WhatsupIcon";
 import { CheckIcon } from "icons/CheckIcon";
 import { Check2Icon } from "icons/Check2Icon";
 import { EdgeIcon, EdgeIcon2, EdgeIcon3, EdgeIcon4 } from "icons/Edge";
+import { LeftArrowIcon } from "icons/LeftArrowIcon";
+import { RightArrowIcon } from "icons/RightArrowIcon";
 
 export {
   CloseIcon,
@@ -19,4 +21,6 @@ export {
   EdgeIcon2,
   EdgeIcon3,
   EdgeIcon4,
+  LeftArrowIcon,
+  RightArrowIcon,
 };
