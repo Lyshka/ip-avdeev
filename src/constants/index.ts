@@ -5,5 +5,6 @@ import { edge } from "constants/edge";
 import { product } from "constants/product";
 import { delivery } from "constants/delivery";
 import { review } from "constants/review";
+import { gallery } from "constants/gallery";
 
-export { contact, menu, upBlock, edge, product, delivery, review };
+export { contact, menu, upBlock, edge, product, delivery, review, gallery };

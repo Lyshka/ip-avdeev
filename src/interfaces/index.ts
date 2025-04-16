@@ -10,6 +10,7 @@ import { IContainer } from "interfaces/IContainer";
 import { IProduct } from "interfaces/IProduct";
 import { IDelivery } from "interfaces/IDelivery";
 import { IReview } from "interfaces/IReview";
+import { IGallery } from "interfaces/IGallery";
 
 export type {
   IContact,
@@ -24,4 +25,5 @@ export type {
   IProduct,
   IDelivery,
   IReview,
+  IGallery,
 };

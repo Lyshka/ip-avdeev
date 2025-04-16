@@ -8,6 +8,7 @@
   --color-gray-f8: #f8f4f2;
   --color-gray-ae: #aeacab;
   --color-gray-69: #696969;
+  --color-gray-7: #777777;
   --color-green: #0fc042;
 
   --animate-fadeIn: fadeIn 0.5s ease-out;
@@ -53,5 +54,9 @@
 @layer components {
   .inputForm {
     @apply w-full bg-white focus-within:border-gray-31 border border-transparent rounded-md placeholder:text-gray-69 p-3.5 font-robotoFlex;
+  }
+
+  .modal {
+    @apply fixed inset-0 bg-black/50 backdrop-blur hidden justify-center items-center animate-fadeIn z-10;
   }
 }
