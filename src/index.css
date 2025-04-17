@@ -11,6 +11,9 @@
   --color-gray-7: #777777;
   --color-green: #0fc042;
 
+  --grid-rows-0: 0fr;
+  --grid-rows-1: 1fr;
+
   --animate-fadeIn: fadeIn 0.5s ease-out;
 
   --spacing-container: 1200px;

@@ -6,5 +6,16 @@ import { product } from "constants/product";
 import { delivery } from "constants/delivery";
 import { review } from "constants/review";
 import { gallery } from "constants/gallery";
+import { quest } from "constants/quest";
 
-export { contact, menu, upBlock, edge, product, delivery, review, gallery };
+export {
+  contact,
+  menu,
+  upBlock,
+  edge,
+  product,
+  delivery,
+  review,
+  gallery,
+  quest,
+};

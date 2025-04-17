@@ -8,6 +8,7 @@ import { Check2Icon } from "icons/Check2Icon";
 import { EdgeIcon, EdgeIcon2, EdgeIcon3, EdgeIcon4 } from "icons/Edge";
 import { LeftArrowIcon } from "icons/LeftArrowIcon";
 import { RightArrowIcon } from "icons/RightArrowIcon";
+import { ArrowDownQuest } from "icons/ArrowDownQuest";
 
 export {
   CloseIcon,
@@ -23,4 +24,5 @@ export {
   EdgeIcon4,
   LeftArrowIcon,
   RightArrowIcon,
+  ArrowDownQuest,
 };

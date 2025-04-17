@@ -11,6 +11,7 @@ import { IProduct } from "interfaces/IProduct";
 import { IDelivery } from "interfaces/IDelivery";
 import { IReview } from "interfaces/IReview";
 import { IGallery } from "interfaces/IGallery";
+import { IQuest, IQuestItem } from "interfaces/IQuest";
 
 export type {
   IContact,
@@ -26,4 +27,6 @@ export type {
   IDelivery,
   IReview,
   IGallery,
+  IQuest,
+  IQuestItem,
 };
