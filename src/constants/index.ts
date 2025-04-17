@@ -7,6 +7,7 @@ import { delivery } from "constants/delivery";
 import { review } from "constants/review";
 import { gallery } from "constants/gallery";
 import { quest } from "constants/quest";
+import { address } from "constants/address";
 
 export {
   contact,
@@ -18,4 +19,5 @@ export {
   review,
   gallery,
   quest,
+  address,
 };

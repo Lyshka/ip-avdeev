@@ -52,6 +52,10 @@
   body.noScroll {
     @apply overflow-hidden;
   }
+
+  address {
+    @apply not-italic;
+  }
 }
 
 @layer components {
