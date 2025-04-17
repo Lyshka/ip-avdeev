@@ -12,7 +12,7 @@ export const UpBlock = () => {
   }
 
   return (
-    <section className="bg-[url('bgUpBlock.png')] h-screen bg-cover bg-center">
+    <section className="bg-[url('/bgUpBlock.png')] h-screen bg-cover bg-center">
       <Container className="py-20 flex items-center h-full relative">
         <div className="max-w-[819px] w-full space-y-11">
           <h1 className="text-[60px] font-bold text-white uppercase">Горбыль и дрова<br /> сухие и естественной влажности</h1>
