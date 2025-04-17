@@ -1,10 +1,10 @@
 import { cn } from "libs"
-import React from "react"
+import { forwardRef } from "react"
 
-export const Input = React.forwardRef<HTMLInputElement, React.HTMLProps<HTMLInputElement>>(
+export const Input = forwardRef<HTMLInputElement, React.HTMLProps<HTMLInputElement>>(
     ({ ...props }, ref) => {
         return (
-            <input {...props} ref={ref} className={cn("inputForm", props.className)} />
+            <input {...props} placeholder={props.placeholder ?? "Ваше имя"} ref={ref} className={cn("inputForm", props.className)} />
         );
     }
 );

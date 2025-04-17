@@ -20,7 +20,7 @@ export const Delivery = () => {
         <div className="space-y-11">
           <List />
 
-          <Button onClick={handleToggle} className="w-fit">
+          <Button onClick={handleToggle}>
             Обсудить поставку
           </Button>
         </div>

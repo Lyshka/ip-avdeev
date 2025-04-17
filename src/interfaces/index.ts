@@ -12,6 +12,7 @@ import { IDelivery } from "interfaces/IDelivery";
 import { IReview } from "interfaces/IReview";
 import { IGallery } from "interfaces/IGallery";
 import { IQuest, IQuestItem } from "interfaces/IQuest";
+import { ITelInput } from "interfaces/ITelInut";
 
 export type {
   IContact,
@@ -29,4 +30,5 @@ export type {
   IGallery,
   IQuest,
   IQuestItem,
+  ITelInput,
 };

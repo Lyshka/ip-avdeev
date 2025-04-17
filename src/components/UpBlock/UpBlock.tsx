@@ -23,7 +23,7 @@ export const UpBlock = () => {
             ))}
           </ul>
 
-          <Button onClick={handleToggle} className="w-fit">
+          <Button onClick={handleToggle}>
             Обсудить поставку
           </Button>
         </div>
